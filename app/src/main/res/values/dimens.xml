@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Keyboard dimensions -->
+    <dimen name="keyboard_height_default">180dp</dimen>
+    <dimen name="keyboard_height_min">180dp</dimen>
+    <dimen name="keyboard_height_max">320dp</dimen>
+
+    <!-- Key dimensions -->
+    <dimen name="key_height_default">48dp</dimen>
+    <dimen name="key_spacing">3dp</dimen>
+    <dimen name="key_padding">4dp</dimen>
+    <dimen name="key_corner_radius_sharp">0dp</dimen>
+    <dimen name="key_corner_radius_rounded">4dp</dimen>
+    <dimen name="key_corner_radius_pill">8dp</dimen>
+
+    <!-- Key border -->
+    <dimen name="key_border_none">0dp</dimen>
+    <dimen name="key_border_subtle">0.5dp</dimen>
+    <dimen name="key_border_bold">1.5dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="key_text_size_small">16sp</dimen>
+    <dimen name="key_text_size_medium">20sp</dimen>
+    <dimen name="key_text_size_large">24sp</dimen>
+    <dimen name="key_sub_text_size">11sp</dimen>
+
+    <!-- Suggestion bar -->
+    <dimen name="suggestion_bar_height">34dp</dimen>
+    <dimen name="suggestion_item_padding">12dp</dimen>
+    <dimen name="suggestion_text_size">16sp</dimen>
+
+    <!-- T9 status bar -->
+    <dimen name="t9_bar_height">48dp</dimen>
+    <dimen name="t9_compose_text_size">18sp</dimen>
+    <dimen name="t9_letters_text_size">14sp</dimen>
+
+    <!-- D-pad focus -->
+    <dimen name="focus_border_width">2dp</dimen>
+
+    <!-- Popup -->
+    <dimen name="popup_key_size">44dp</dimen>
+    <dimen name="popup_padding">8dp</dimen>
+    <dimen name="popup_elevation">4dp</dimen>
+
+    <!-- One-handed mode -->
+    <dimen name="one_handed_ratio">0.75</dimen>
+
+    <!-- Drag handle -->
+    <dimen name="drag_handle_height">6dp</dimen>
+    <dimen name="drag_handle_width">40dp</dimen>
+</resources>

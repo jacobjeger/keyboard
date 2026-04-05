@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="keyboard_background">#FF1A1A2E</color>
+    <color name="key_background">#FF2A2A3E</color>
+    <color name="key_background_pressed">#FF3A3A5E</color>
+    <color name="key_background_special">#FF252540</color>
+    <color name="key_text">#FFFFFFFF</color>
+    <color name="key_text_secondary">#99FFFFFF</color>
+    <color name="accent">#FF6C63FF</color>
+    <color name="accent_caps_lock">#FFFF6B6B</color>
+    <color name="suggestion_bar_background">#FF222236</color>
+    <color name="suggestion_text">#FFFFFFFF</color>
+    <color name="suggestion_separator">#33FFFFFF</color>
+    <color name="focus_border">#FF6C63FF</color>
+    <color name="spell_check_underline">#FFFF4444</color>
+    <color name="autocorrect_underline">#FF6C63FF</color>
+    <color name="settings_background">#FF121222</color>
+</resources>

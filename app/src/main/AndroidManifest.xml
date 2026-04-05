@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:name=".MegaLifeApplication"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MegaLifeTheme">
+
+        <service
+            android:name=".MegaLifeIME"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:theme="@style/MegaLifeIMETheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+
+        <service
+            android:name=".autofill.MegaLifeAutofillService"
+            android:permission="android.permission.BIND_AUTOFILL_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.autofill.AutofillService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.autofill"
+                android:resource="@xml/autofill_service_config" />
+        </service>
+
+        <activity
+            android:name=".settings.IMESettingsActivity"
+            android:exported="false"
+            android:theme="@style/MegaLifeTheme" />
+
+        <activity
+            android:name=".settings.PasswordManagerActivity"
+            android:exported="false"
+            android:theme="@style/MegaLifeTheme" />
+
+        <activity
+            android:name=".settings.ThemePickerActivity"
+            android:exported="false"
+            android:theme="@style/MegaLifeTheme" />
+
+    </application>
+</manifest>

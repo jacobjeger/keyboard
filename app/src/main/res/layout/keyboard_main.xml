@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/keyboard_background">
+
+    <!-- Drag handle -->
+    <View
+        android:id="@+id/drag_handle"
+        android:layout_width="@dimen/drag_handle_width"
+        android:layout_height="@dimen/drag_handle_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/key_text_secondary" />
+
+    <!-- Suggestion bar (always visible except password mode) -->
+    <include layout="@layout/suggestion_bar" />
+
+    <!-- T9 status bar (shown above keyboard when in T9 modes) -->
+    <include
+        layout="@layout/t9_status_bar"
+        android:id="@+id/t9_status_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Keyboard container - holds touch keyboard / emoji / clipboard / etc -->
+    <FrameLayout
+        android:id="@+id/keyboard_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Landscape: shorter keyboard to leave more screen visible -->
+    <dimen name="keyboard_height_default">160dp</dimen>
+    <dimen name="keyboard_height_min">120dp</dimen>
+    <dimen name="keyboard_height_max">200dp</dimen>
+
+    <dimen name="key_height_default">36dp</dimen>
+
+    <dimen name="suggestion_bar_height">32dp</dimen>
+    <dimen name="suggestion_text_size">14sp</dimen>
+
+    <dimen name="t9_bar_height">36dp</dimen>
+    <dimen name="t9_compose_text_size">16sp</dimen>
+
+    <dimen name="drag_handle_height">4dp</dimen>
+    <dimen name="drag_handle_width">32dp</dimen>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MegaLifeTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/keyboard_background</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/settings_background</item>
+        <item name="android:textColor">@color/key_text</item>
+    </style>
+
+    <!-- IME-specific theme: transparent window so app shows through -->
+    <style name="MegaLifeIMETheme" parent="@android:style/Theme.InputMethod">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+</resources>

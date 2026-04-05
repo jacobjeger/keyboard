@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suggestion_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/suggestion_bar_height"
+    android:orientation="horizontal"
+    android:background="@color/suggestion_bar_background"
+    android:gravity="center_vertical"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp">
+
+    <!-- Undo/Redo area -->
+    <TextView
+        android:id="@+id/btn_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingStart="6dp"
+        android:paddingEnd="4dp"
+        android:text="@string/undo"
+        android:textColor="@color/accent"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_redo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingEnd="6dp"
+        android:text="@string/redo"
+        android:textColor="@color/accent"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <!-- Gematria display (Hebrew only) -->
+    <TextView
+        android:id="@+id/gematria_display"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/accent"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <!-- Suggestions RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/suggestion_list"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:orientation="horizontal" />
+
+    <!-- Action icons: mic, clipboard, one-hand -->
+    <ImageView
+        android:id="@+id/btn_voice"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="4dp"
+        android:contentDescription="Voice input"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_clipboard"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="4dp"
+        android:contentDescription="Clipboard" />
+
+    <TextView
+        android:id="@+id/btn_one_handed"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:text="[ ]"
+        android:textColor="@color/key_text_secondary"
+        android:textSize="12sp" />
+
+</LinearLayout>

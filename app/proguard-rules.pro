@@ -1,0 +1,4 @@
+-keep class com.megalife.ime.** { *; }
+-keep class androidx.room.** { *; }
+-dontwarn com.microsoft.cognitiveservices.speech.**
+-keep class com.microsoft.cognitiveservices.speech.** { *; }
