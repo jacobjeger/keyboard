@@ -11,7 +11,7 @@ Custom Android IME (Input Method Editor) built for the MegaLife F1 kosher Androi
 
 ### Languages
 - **English** — QWERTY layout, full dictionary (~5000 words)
-- **Hebrew** — Native Hebrew layout (RTL), dictionary (~3000 words), nikud panel, gematria display
+- **Hebrew** — Native Hebrew layout (RTL), dictionary (~3000 words), nikud panel
 - Switch with * key (physical) or globe button (touch)
 
 ### Word Prediction
@@ -26,7 +26,6 @@ Custom Android IME (Input Method Editor) built for the MegaLife F1 kosher Androi
 - Word blocklist — long-press a suggestion to block it
 
 ### Hebrew Features
-- **Gematria** — Real-time numerical value display while typing Hebrew
 - **Nikud** — Vowel mark panel (long-press period in Hebrew mode)
 - **Final forms** — Automatic כ→ך מ→ם נ→ן פ→ף צ→ץ replacement at word end
 
@@ -101,7 +100,6 @@ com.megalife.ime/
 ├── feature/
 │   ├── SuggestionManager.kt # Prediction pipeline
 │   ├── SpellChecker.kt      # Autocorrect engine
-│   ├── GematriaCalculator.kt
 │   ├── NikudManager.kt
 │   ├── EmojiData.kt         # Kosher emoji dataset
 │   ├── EmojiManager.kt

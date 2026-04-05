@@ -573,15 +573,6 @@ class MegaLifeIME : InputMethodService() {
 
     private fun updateComposingDisplay(text: String) {
         t9StatusView?.updateComposingText(text)
-        // Update gematria if in Hebrew mode
-        if (inputEngine.currentLanguage.scriptType == ScriptType.HEBREW && text.isNotEmpty()) {
-            val gematria = GematriaCalculator.calculate(text)
-            val display = keyboardView?.findViewById<TextView>(R.id.gematria_display)
-            display?.text = "[$gematria]"
-            display?.visibility = View.VISIBLE
-        } else {
-            keyboardView?.findViewById<TextView>(R.id.gematria_display)?.visibility = View.GONE
-        }
     }
 
     private fun updateMultiTapDisplay(key: Int, charIndex: Int, chars: List<Char>) {

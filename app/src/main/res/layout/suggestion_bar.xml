@@ -34,17 +34,6 @@
         android:textSize="12sp"
         android:visibility="gone" />
 
-    <!-- Gematria display (Hebrew only) -->
-    <TextView
-        android:id="@+id/gematria_display"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:textColor="@color/accent"
-        android:textSize="14sp"
-        android:visibility="gone" />
 
     <!-- Suggestions RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView

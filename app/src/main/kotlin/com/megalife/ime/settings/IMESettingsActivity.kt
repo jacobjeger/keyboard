@@ -213,12 +213,6 @@ class IMESettingsActivity : AppCompatActivity() {
             screen.addPreference(hebrewCategory)
 
             hebrewCategory.addPreference(SwitchPreferenceCompat(context).apply {
-                key = PreferenceKeys.GEMATRIA
-                title = getString(R.string.pref_gematria)
-                setDefaultValue(true)
-            })
-
-            hebrewCategory.addPreference(SwitchPreferenceCompat(context).apply {
                 key = PreferenceKeys.NIKUD
                 title = getString(R.string.pref_nikud)
                 setDefaultValue(false)

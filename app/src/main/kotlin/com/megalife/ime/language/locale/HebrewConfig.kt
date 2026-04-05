@@ -37,16 +37,6 @@ object HebrewConfig {
         'צ' to 'ץ'
     )
 
-    /** Standard gematria values */
-    val gematriaValues = mapOf(
-        'א' to 1, 'ב' to 2, 'ג' to 3, 'ד' to 4, 'ה' to 5,
-        'ו' to 6, 'ז' to 7, 'ח' to 8, 'ט' to 9, 'י' to 10,
-        'כ' to 20, 'ך' to 20, 'ל' to 30, 'מ' to 40, 'ם' to 40,
-        'נ' to 50, 'ן' to 50, 'ס' to 60, 'ע' to 70, 'פ' to 80,
-        'ף' to 80, 'צ' to 90, 'ץ' to 90, 'ק' to 100, 'ר' to 200,
-        'ש' to 300, 'ת' to 400
-    )
-
     val touchLayout = TouchLayout(
         rows = listOf(
             // Row 1 (RTL): / ' ק ר א ט ו ן ם פ
@@ -100,7 +90,6 @@ object HebrewConfig {
         hasAutoCorrect = true,
         hasSpellCheck = true,
         finalForms = finalForms,
-        gematriaValues = gematriaValues,
         voiceLocale = "he-IL"
     )
 }

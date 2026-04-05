@@ -23,8 +23,6 @@ data class LanguageConfig(
     val hasSpellCheck: Boolean = scriptType.supportsSpellCheck,
     /** Hebrew final forms: maps base char to final form */
     val finalForms: Map<Char, Char> = emptyMap(),
-    /** Gematria values for Hebrew */
-    val gematriaValues: Map<Char, Int> = emptyMap(),
     /** Azure Speech locale string for voice input */
     val voiceLocale: String = code
 )

@@ -26,8 +26,6 @@ object PreferenceKeys {
     const val CURRENT_LANGUAGE = "current_language"
 
     // Hebrew
-    const val GEMATRIA = "pref_gematria"
-    const val GEMATRIA_METHOD = "pref_gematria_method"
     const val NIKUD = "pref_nikud"
     const val PER_APP_LANGUAGE = "pref_per_app_language"
 
